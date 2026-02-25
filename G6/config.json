@@ -1,0 +1,27 @@
+{
+    "lang": {
+        "vehicule": {
+            "ouvreuse": "Ouvreuse",
+            "mainVeh": "Véhicule principal",
+            "suiveuse": "Suiveuse"
+        },
+        "missions": {
+            "secu_hr": "Sécu HR",
+            "tour_sup": "Supérettes",
+            "concess": "Sécu Concess",
+            "event": "Sécu Event",
+            "taxes": "Taxes/Subventions"
+        },
+        "weapons": {
+            "fap": "Fusil à Pompe",
+            "fap_bullpup": "Fusil à Pompe Bullpup",
+            "smg": "SMG",
+            "pistolet": "Pistolet",
+            "perso_pistolet": "Pistolet (Personnel)",
+            "revolver": "Revolver",
+            "perso_revolver": "Revolver (Personnel)",
+            "taser": "Taser",
+            "perso_taser": "Taser (Personnel)"
+        }
+    }
+}

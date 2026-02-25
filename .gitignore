@@ -1,0 +1,5 @@
+node_modules
+.env
+.idea
+G6/data.json
+G6/dev/data.json
