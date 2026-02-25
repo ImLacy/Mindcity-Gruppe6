@@ -17,6 +17,9 @@ Les données sont les suivantes :
 - Prénom/Nom/Code Agent RP fourni lors de l'ajout employé
 - Informations remplis dans les formulaires (Type de mission, rôle du véhicule, plaque du véhicule, conducteur, agents, armement, etc)
 
+Les données sont stockés un serveur dédié, hébergé en France (OVHCloud)
+Je suis la seule à pouvoir y accéder
+
 ## Informations
 
 Prérequis :
