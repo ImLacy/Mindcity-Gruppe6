@@ -45,5 +45,14 @@ module.exports = {
         console.log("\x1b[34m[Interaction]" + `\x1b[0m Chargement de \x1b[34m${interactionNbr}\x1b[0m interactions \x1b[0m`)
 
         //await G6.utils.registerCommands()
+
+
+        const push = async () => {
+            await fetch(process.env.MONITORING_URL);
+        };
+
+        push();
+        setInterval(push, process.env.MONITORING_INTERVAL * 1000);
     }
 }
+
