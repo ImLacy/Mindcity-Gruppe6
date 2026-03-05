@@ -76,7 +76,7 @@ module.exports = {
         for (const [conducteur, missionDetails] of Object.entries(G6.data.missions)) {
             serviceEmbed.addFields({
                 name: `${G6.config.lang.missions[missionDetails.mission]} - ${G6.config.lang.vehicule[missionDetails.vehicule]} (${missionDetails.plaque})`,
-                value: `Conducteur : ${G6.data.agents[missionDetails.conducteur].code_agent}, Agents : ` + [missionDetails.agent2, missionDetails.agent3, missionDetails.agent4]
+                value: `Conducteur : ${G6.data.agents[missionDetails.conducteur].code_agent}${(missionDetails.agent2 !== "" || missionDetails.agent3 !== "" || missionDetails.agent4 !== "") ? ", Agents : " : ""}` + [missionDetails.agent2, missionDetails.agent3, missionDetails.agent4]
                     .filter(agent => agent !== "")
                     .map(agent => G6.data.agents[agent].code_agent)
                     .join(", ")
