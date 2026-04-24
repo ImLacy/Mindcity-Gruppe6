@@ -4,7 +4,7 @@ const { REST, Routes, ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder
 
 module.exports = {
     saveData() {
-        fs.writeFileSync(`${__basedir}/G6/${G6.dev ? 'dev/' : ''}data.json`, JSON.stringify(G6.data, null, 2));
+        fs.writeFileSync(`${__basedir}/G6/data.json`, JSON.stringify(G6.data, null, 2));
     },
     async registerCommands() {
         const commandsList = []

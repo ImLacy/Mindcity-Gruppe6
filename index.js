@@ -8,14 +8,7 @@ const myArgs = process.argv.slice(2);
 global.__basedir = __dirname;
 global.G6 = require('./G6');
 
-if (myArgs.length > 0 && myArgs[0] === "dev") {
-    global.G6 = require('./G6/dev');
-    G6.dev = true
-    console.log("Launching in " + "\x1b[32mdeveloper\x1b[0m" + " mode\n")
-} else {
-    G6.dev = false
-    console.log("Launching in " + "\x1b[34mproduction\x1b[0m" + " mode\n")
-}
+console.log("Launching in " + "\x1b[34mproduction\x1b[0m" + " mode\n")
 
 process.on('uncaughtException', function (err) {
     console.error(err);

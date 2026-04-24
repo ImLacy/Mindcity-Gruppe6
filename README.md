@@ -31,6 +31,20 @@ Technologies :
 - Discord.JS
 - FS
 
+## Utilisation
+### Docker
+Pour Docker, vous devez d'abord définir les variable du .env
+Ensuite, copier le data.json.example en data.json **et placez le à la racine**
+Vous pouvez ensuite lancer le conteneur `docker compose up -d`
+
+Docker utilise Loki pour le logging, libre à vous d'en changer.
+
+### Sources
+Le bot nécessite simplement NodeJS, il vous suffit de lancer un ``npm install``
+Définissez les variable dans le .env
+Copier le data.json.example en data.json
+Ensuite, ``node index.js`` à la racine pour lancer le bot
+
  ## Contributions
 
  Vous êtes libre d'apporter des contributions, et proposer leur intégration au projet principal
