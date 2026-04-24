@@ -25,4 +25,17 @@ fs.readdirSync('events').forEach(file => {
     else client.on(event.type, event.callback.bind(event));
 });
 
+process.on('SIGTERM', async () => {
+  console.log('Arrêt..');
+  await client.destroy();
+  process.exit(0);
+});
+
+process.on('SIGINT', async () => {
+  console.log('Arrêt..');
+  await client.destroy();
+  process.exit(0);
+});
+
+
 client.login(process.env.DISCORD_TOKEN)
